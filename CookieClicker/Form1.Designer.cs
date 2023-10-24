@@ -74,9 +74,6 @@
             this.cookieBakkie = new System.Windows.Forms.Label();
             this.cookieStall = new System.Windows.Forms.Label();
             this.prizeStall = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
             this.buttonShipping = new System.Windows.Forms.Button();
             this.buttonWholesale = new System.Windows.Forms.Button();
             this.buttonBakery = new System.Windows.Forms.Button();
@@ -100,6 +97,13 @@
             this.timer5 = new System.Windows.Forms.Timer(this.components);
             this.timer6 = new System.Windows.Forms.Timer(this.components);
             this.label7 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel1.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // buttonCookie
@@ -126,60 +130,65 @@
             // 
             // buttonRoller
             // 
+            this.buttonRoller.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.buttonRoller.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonRoller.BackgroundImage")));
             this.buttonRoller.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.buttonRoller.Enabled = false;
-            this.buttonRoller.Location = new System.Drawing.Point(822, 69);
+            this.buttonRoller.Location = new System.Drawing.Point(3, 42);
             this.buttonRoller.Name = "buttonRoller";
-            this.buttonRoller.Size = new System.Drawing.Size(117, 39);
+            this.buttonRoller.Size = new System.Drawing.Size(111, 39);
             this.buttonRoller.TabIndex = 4;
             this.buttonRoller.UseVisualStyleBackColor = true;
             this.buttonRoller.Click += new System.EventHandler(this.buttonRoller_Click);
             // 
             // buttonStool
             // 
+            this.buttonStool.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.buttonStool.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonStool.BackgroundImage")));
             this.buttonStool.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.buttonStool.Enabled = false;
-            this.buttonStool.Location = new System.Drawing.Point(822, 141);
+            this.buttonStool.Location = new System.Drawing.Point(3, 111);
             this.buttonStool.Name = "buttonStool";
-            this.buttonStool.Size = new System.Drawing.Size(117, 39);
+            this.buttonStool.Size = new System.Drawing.Size(111, 39);
             this.buttonStool.TabIndex = 5;
             this.buttonStool.UseVisualStyleBackColor = true;
             this.buttonStool.Click += new System.EventHandler(this.buttonStool_Click_1);
             // 
             // buttonFlour
             // 
+            this.buttonFlour.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.buttonFlour.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonFlour.BackgroundImage")));
             this.buttonFlour.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.buttonFlour.Enabled = false;
-            this.buttonFlour.Location = new System.Drawing.Point(822, 220);
+            this.buttonFlour.Location = new System.Drawing.Point(3, 180);
             this.buttonFlour.Name = "buttonFlour";
-            this.buttonFlour.Size = new System.Drawing.Size(117, 39);
+            this.buttonFlour.Size = new System.Drawing.Size(111, 39);
             this.buttonFlour.TabIndex = 6;
             this.buttonFlour.UseVisualStyleBackColor = true;
             this.buttonFlour.Click += new System.EventHandler(this.buttonFlour_Click_1);
             // 
             // buttonMixer
             // 
+            this.buttonMixer.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.buttonMixer.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonMixer.BackgroundImage")));
             this.buttonMixer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.buttonMixer.Enabled = false;
-            this.buttonMixer.Location = new System.Drawing.Point(822, 299);
+            this.buttonMixer.Location = new System.Drawing.Point(3, 249);
             this.buttonMixer.Name = "buttonMixer";
-            this.buttonMixer.Size = new System.Drawing.Size(117, 39);
+            this.buttonMixer.Size = new System.Drawing.Size(111, 39);
             this.buttonMixer.TabIndex = 7;
             this.buttonMixer.UseVisualStyleBackColor = true;
             this.buttonMixer.Click += new System.EventHandler(this.buttonMixer_Click_1);
             // 
             // buttonOven
             // 
+            this.buttonOven.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.buttonOven.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonOven.BackgroundImage")));
             this.buttonOven.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.buttonOven.Enabled = false;
-            this.buttonOven.Location = new System.Drawing.Point(822, 375);
+            this.buttonOven.Location = new System.Drawing.Point(3, 318);
             this.buttonOven.Name = "buttonOven";
-            this.buttonOven.Size = new System.Drawing.Size(117, 39);
+            this.buttonOven.Size = new System.Drawing.Size(111, 39);
             this.buttonOven.TabIndex = 8;
             this.buttonOven.UseVisualStyleBackColor = true;
             this.buttonOven.Click += new System.EventHandler(this.buttonOven_Click_1);
@@ -188,7 +197,8 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Showcard Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(964, 25);
+            this.label2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label2.Location = new System.Drawing.Point(120, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(69, 27);
             this.label2.TabIndex = 9;
@@ -198,7 +208,8 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Showcard Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(1165, 25);
+            this.label3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label3.Location = new System.Drawing.Point(336, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(89, 27);
             this.label3.TabIndex = 10;
@@ -208,7 +219,8 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Showcard Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(1072, 25);
+            this.label4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label4.Location = new System.Drawing.Point(228, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(64, 27);
             this.label4.TabIndex = 10;
@@ -217,137 +229,167 @@
             // prizeRoller
             // 
             this.prizeRoller.AutoSize = true;
-            this.prizeRoller.Location = new System.Drawing.Point(975, 81);
+            this.prizeRoller.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.prizeRoller.Location = new System.Drawing.Point(120, 27);
             this.prizeRoller.Name = "prizeRoller";
-            this.prizeRoller.Size = new System.Drawing.Size(13, 15);
+            this.prizeRoller.Size = new System.Drawing.Size(102, 69);
             this.prizeRoller.TabIndex = 11;
             this.prizeRoller.Text = "5";
+            this.prizeRoller.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // prizeStool
             // 
             this.prizeStool.AutoSize = true;
-            this.prizeStool.Location = new System.Drawing.Point(975, 158);
+            this.prizeStool.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.prizeStool.Location = new System.Drawing.Point(120, 96);
             this.prizeStool.Name = "prizeStool";
-            this.prizeStool.Size = new System.Drawing.Size(19, 15);
+            this.prizeStool.Size = new System.Drawing.Size(102, 69);
             this.prizeStool.TabIndex = 11;
             this.prizeStool.Text = "20";
+            this.prizeStool.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // prizeFlour
             // 
             this.prizeFlour.AutoSize = true;
-            this.prizeFlour.Location = new System.Drawing.Point(975, 232);
+            this.prizeFlour.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.prizeFlour.Location = new System.Drawing.Point(120, 165);
             this.prizeFlour.Name = "prizeFlour";
-            this.prizeFlour.Size = new System.Drawing.Size(19, 15);
+            this.prizeFlour.Size = new System.Drawing.Size(102, 69);
             this.prizeFlour.TabIndex = 11;
             this.prizeFlour.Text = "50";
+            this.prizeFlour.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // prizeMixer
             // 
             this.prizeMixer.AutoSize = true;
-            this.prizeMixer.Location = new System.Drawing.Point(975, 311);
+            this.prizeMixer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.prizeMixer.Location = new System.Drawing.Point(120, 234);
             this.prizeMixer.Name = "prizeMixer";
-            this.prizeMixer.Size = new System.Drawing.Size(25, 15);
+            this.prizeMixer.Size = new System.Drawing.Size(102, 69);
             this.prizeMixer.TabIndex = 11;
             this.prizeMixer.Text = "100";
+            this.prizeMixer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // prizeOven
             // 
             this.prizeOven.AutoSize = true;
-            this.prizeOven.Location = new System.Drawing.Point(975, 387);
+            this.prizeOven.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.prizeOven.Location = new System.Drawing.Point(120, 303);
             this.prizeOven.Name = "prizeOven";
-            this.prizeOven.Size = new System.Drawing.Size(25, 15);
+            this.prizeOven.Size = new System.Drawing.Size(102, 69);
             this.prizeOven.TabIndex = 11;
             this.prizeOven.Text = "300";
+            this.prizeOven.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // cookieRoller
             // 
             this.cookieRoller.AutoSize = true;
-            this.cookieRoller.Location = new System.Drawing.Point(1097, 81);
+            this.cookieRoller.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cookieRoller.Location = new System.Drawing.Point(228, 27);
             this.cookieRoller.Name = "cookieRoller";
-            this.cookieRoller.Size = new System.Drawing.Size(13, 15);
+            this.cookieRoller.Size = new System.Drawing.Size(102, 69);
             this.cookieRoller.TabIndex = 11;
             this.cookieRoller.Text = "1";
+            this.cookieRoller.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // cookieOven
             // 
             this.cookieOven.AutoSize = true;
-            this.cookieOven.Location = new System.Drawing.Point(1097, 387);
+            this.cookieOven.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cookieOven.Location = new System.Drawing.Point(228, 303);
             this.cookieOven.Name = "cookieOven";
-            this.cookieOven.Size = new System.Drawing.Size(19, 15);
+            this.cookieOven.Size = new System.Drawing.Size(102, 69);
             this.cookieOven.TabIndex = 11;
             this.cookieOven.Text = "10";
+            this.cookieOven.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // numberRoller
             // 
             this.numberRoller.AutoSize = true;
-            this.numberRoller.Location = new System.Drawing.Point(1202, 81);
+            this.numberRoller.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.numberRoller.Location = new System.Drawing.Point(336, 27);
             this.numberRoller.Name = "numberRoller";
-            this.numberRoller.Size = new System.Drawing.Size(13, 15);
+            this.numberRoller.Size = new System.Drawing.Size(103, 69);
             this.numberRoller.TabIndex = 11;
             this.numberRoller.Text = "0";
+            this.numberRoller.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // numberOven
             // 
             this.numberOven.AutoSize = true;
-            this.numberOven.Location = new System.Drawing.Point(1202, 387);
+            this.numberOven.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.numberOven.Location = new System.Drawing.Point(336, 303);
             this.numberOven.Name = "numberOven";
-            this.numberOven.Size = new System.Drawing.Size(13, 15);
+            this.numberOven.Size = new System.Drawing.Size(103, 69);
             this.numberOven.TabIndex = 11;
             this.numberOven.Text = "0";
+            this.numberOven.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // cookieStool
             // 
             this.cookieStool.AutoSize = true;
-            this.cookieStool.Location = new System.Drawing.Point(1097, 158);
+            this.cookieStool.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cookieStool.Location = new System.Drawing.Point(228, 96);
             this.cookieStool.Name = "cookieStool";
-            this.cookieStool.Size = new System.Drawing.Size(13, 15);
+            this.cookieStool.Size = new System.Drawing.Size(102, 69);
             this.cookieStool.TabIndex = 11;
             this.cookieStool.Text = "2";
+            this.cookieStool.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // numberStool
             // 
             this.numberStool.AutoSize = true;
-            this.numberStool.Location = new System.Drawing.Point(1202, 158);
+            this.numberStool.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.numberStool.Location = new System.Drawing.Point(336, 96);
             this.numberStool.Name = "numberStool";
-            this.numberStool.Size = new System.Drawing.Size(13, 15);
+            this.numberStool.Size = new System.Drawing.Size(103, 69);
             this.numberStool.TabIndex = 11;
             this.numberStool.Text = "0";
+            this.numberStool.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // cookieFlour
             // 
             this.cookieFlour.AutoSize = true;
-            this.cookieFlour.Location = new System.Drawing.Point(1097, 232);
+            this.cookieFlour.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cookieFlour.Location = new System.Drawing.Point(228, 165);
             this.cookieFlour.Name = "cookieFlour";
-            this.cookieFlour.Size = new System.Drawing.Size(13, 15);
+            this.cookieFlour.Size = new System.Drawing.Size(102, 69);
             this.cookieFlour.TabIndex = 11;
             this.cookieFlour.Text = "3";
+            this.cookieFlour.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // numberFlour
             // 
             this.numberFlour.AutoSize = true;
-            this.numberFlour.Location = new System.Drawing.Point(1202, 232);
+            this.numberFlour.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.numberFlour.Location = new System.Drawing.Point(336, 165);
             this.numberFlour.Name = "numberFlour";
-            this.numberFlour.Size = new System.Drawing.Size(13, 15);
+            this.numberFlour.Size = new System.Drawing.Size(103, 69);
             this.numberFlour.TabIndex = 11;
             this.numberFlour.Text = "0";
+            this.numberFlour.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // cookieMixer
             // 
             this.cookieMixer.AutoSize = true;
-            this.cookieMixer.Location = new System.Drawing.Point(1097, 311);
+            this.cookieMixer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cookieMixer.Location = new System.Drawing.Point(228, 234);
             this.cookieMixer.Name = "cookieMixer";
-            this.cookieMixer.Size = new System.Drawing.Size(13, 15);
+            this.cookieMixer.Size = new System.Drawing.Size(102, 69);
             this.cookieMixer.TabIndex = 11;
             this.cookieMixer.Text = "5";
+            this.cookieMixer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // numberMixer
             // 
             this.numberMixer.AutoSize = true;
-            this.numberMixer.Location = new System.Drawing.Point(1202, 311);
+            this.numberMixer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.numberMixer.Location = new System.Drawing.Point(336, 234);
             this.numberMixer.Name = "numberMixer";
-            this.numberMixer.Size = new System.Drawing.Size(13, 15);
+            this.numberMixer.Size = new System.Drawing.Size(103, 69);
             this.numberMixer.TabIndex = 11;
             this.numberMixer.Text = "0";
+            this.numberMixer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // powerOfClick
             // 
@@ -392,224 +434,229 @@
             // numberShipping
             // 
             this.numberShipping.AutoSize = true;
-            this.numberShipping.Location = new System.Drawing.Point(409, 387);
+            this.numberShipping.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.numberShipping.Location = new System.Drawing.Point(336, 303);
             this.numberShipping.Name = "numberShipping";
-            this.numberShipping.Size = new System.Drawing.Size(13, 15);
+            this.numberShipping.Size = new System.Drawing.Size(103, 69);
             this.numberShipping.TabIndex = 36;
             this.numberShipping.Text = "0";
+            this.numberShipping.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // cookieShipping
             // 
             this.cookieShipping.AutoSize = true;
-            this.cookieShipping.Location = new System.Drawing.Point(304, 387);
+            this.cookieShipping.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cookieShipping.Location = new System.Drawing.Point(228, 303);
             this.cookieShipping.Name = "cookieShipping";
-            this.cookieShipping.Size = new System.Drawing.Size(19, 15);
+            this.cookieShipping.Size = new System.Drawing.Size(102, 69);
             this.cookieShipping.TabIndex = 35;
             this.cookieShipping.Text = "20";
+            this.cookieShipping.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // prizeShipping
             // 
             this.prizeShipping.AutoSize = true;
-            this.prizeShipping.Location = new System.Drawing.Point(182, 387);
+            this.prizeShipping.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.prizeShipping.Location = new System.Drawing.Point(120, 303);
             this.prizeShipping.Name = "prizeShipping";
-            this.prizeShipping.Size = new System.Drawing.Size(31, 15);
+            this.prizeShipping.Size = new System.Drawing.Size(102, 69);
             this.prizeShipping.TabIndex = 34;
             this.prizeShipping.Text = "5000";
+            this.prizeShipping.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // prizeWholesale
             // 
             this.prizeWholesale.AutoSize = true;
-            this.prizeWholesale.Location = new System.Drawing.Point(182, 311);
+            this.prizeWholesale.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.prizeWholesale.Location = new System.Drawing.Point(120, 234);
             this.prizeWholesale.Name = "prizeWholesale";
-            this.prizeWholesale.Size = new System.Drawing.Size(31, 15);
+            this.prizeWholesale.Size = new System.Drawing.Size(102, 69);
             this.prizeWholesale.TabIndex = 33;
             this.prizeWholesale.Text = "1000";
+            this.prizeWholesale.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // prizeBakery
             // 
             this.prizeBakery.AutoSize = true;
-            this.prizeBakery.Location = new System.Drawing.Point(182, 232);
+            this.prizeBakery.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.prizeBakery.Location = new System.Drawing.Point(120, 165);
             this.prizeBakery.Name = "prizeBakery";
-            this.prizeBakery.Size = new System.Drawing.Size(25, 15);
+            this.prizeBakery.Size = new System.Drawing.Size(102, 69);
             this.prizeBakery.TabIndex = 32;
             this.prizeBakery.Text = "500";
+            this.prizeBakery.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // prizeBakkie
             // 
             this.prizeBakkie.AutoSize = true;
-            this.prizeBakkie.Location = new System.Drawing.Point(182, 158);
+            this.prizeBakkie.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.prizeBakkie.Location = new System.Drawing.Point(120, 96);
             this.prizeBakkie.Name = "prizeBakkie";
-            this.prizeBakkie.Size = new System.Drawing.Size(25, 15);
+            this.prizeBakkie.Size = new System.Drawing.Size(102, 69);
             this.prizeBakkie.TabIndex = 31;
             this.prizeBakkie.Text = "200";
+            this.prizeBakkie.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // numberWholesale
             // 
             this.numberWholesale.AutoSize = true;
-            this.numberWholesale.Location = new System.Drawing.Point(409, 311);
+            this.numberWholesale.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.numberWholesale.Location = new System.Drawing.Point(336, 234);
             this.numberWholesale.Name = "numberWholesale";
-            this.numberWholesale.Size = new System.Drawing.Size(13, 15);
+            this.numberWholesale.Size = new System.Drawing.Size(103, 69);
             this.numberWholesale.TabIndex = 30;
             this.numberWholesale.Text = "0";
+            this.numberWholesale.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // numberBakery
             // 
             this.numberBakery.AutoSize = true;
-            this.numberBakery.Location = new System.Drawing.Point(409, 232);
+            this.numberBakery.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.numberBakery.Location = new System.Drawing.Point(336, 165);
             this.numberBakery.Name = "numberBakery";
-            this.numberBakery.Size = new System.Drawing.Size(13, 15);
+            this.numberBakery.Size = new System.Drawing.Size(103, 69);
             this.numberBakery.TabIndex = 29;
             this.numberBakery.Text = "0";
+            this.numberBakery.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // numberBakkie
             // 
             this.numberBakkie.AutoSize = true;
-            this.numberBakkie.Location = new System.Drawing.Point(409, 158);
+            this.numberBakkie.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.numberBakkie.Location = new System.Drawing.Point(336, 96);
             this.numberBakkie.Name = "numberBakkie";
-            this.numberBakkie.Size = new System.Drawing.Size(13, 15);
+            this.numberBakkie.Size = new System.Drawing.Size(103, 69);
             this.numberBakkie.TabIndex = 28;
             this.numberBakkie.Text = "0";
+            this.numberBakkie.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // numberStall
             // 
             this.numberStall.AutoSize = true;
-            this.numberStall.Location = new System.Drawing.Point(409, 81);
+            this.numberStall.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.numberStall.Location = new System.Drawing.Point(336, 27);
             this.numberStall.Name = "numberStall";
-            this.numberStall.Size = new System.Drawing.Size(13, 15);
+            this.numberStall.Size = new System.Drawing.Size(103, 69);
             this.numberStall.TabIndex = 37;
             this.numberStall.Text = "0";
+            this.numberStall.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // cookieWholesale
             // 
             this.cookieWholesale.AutoSize = true;
-            this.cookieWholesale.Location = new System.Drawing.Point(304, 311);
+            this.cookieWholesale.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cookieWholesale.Location = new System.Drawing.Point(228, 234);
             this.cookieWholesale.Name = "cookieWholesale";
-            this.cookieWholesale.Size = new System.Drawing.Size(13, 15);
+            this.cookieWholesale.Size = new System.Drawing.Size(102, 69);
             this.cookieWholesale.TabIndex = 27;
             this.cookieWholesale.Text = "8";
+            this.cookieWholesale.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // cookieBakery
             // 
             this.cookieBakery.AutoSize = true;
-            this.cookieBakery.Location = new System.Drawing.Point(304, 232);
+            this.cookieBakery.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cookieBakery.Location = new System.Drawing.Point(228, 165);
             this.cookieBakery.Name = "cookieBakery";
-            this.cookieBakery.Size = new System.Drawing.Size(13, 15);
+            this.cookieBakery.Size = new System.Drawing.Size(102, 69);
             this.cookieBakery.TabIndex = 26;
             this.cookieBakery.Text = "4";
+            this.cookieBakery.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // cookieBakkie
             // 
             this.cookieBakkie.AutoSize = true;
-            this.cookieBakkie.Location = new System.Drawing.Point(304, 158);
+            this.cookieBakkie.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cookieBakkie.Location = new System.Drawing.Point(228, 96);
             this.cookieBakkie.Name = "cookieBakkie";
-            this.cookieBakkie.Size = new System.Drawing.Size(13, 15);
+            this.cookieBakkie.Size = new System.Drawing.Size(102, 69);
             this.cookieBakkie.TabIndex = 25;
             this.cookieBakkie.Text = "2";
+            this.cookieBakkie.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // cookieStall
             // 
             this.cookieStall.AutoSize = true;
-            this.cookieStall.Location = new System.Drawing.Point(304, 81);
+            this.cookieStall.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cookieStall.Location = new System.Drawing.Point(228, 27);
             this.cookieStall.Name = "cookieStall";
-            this.cookieStall.Size = new System.Drawing.Size(13, 15);
+            this.cookieStall.Size = new System.Drawing.Size(102, 69);
             this.cookieStall.TabIndex = 24;
             this.cookieStall.Text = "1";
+            this.cookieStall.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // prizeStall
             // 
             this.prizeStall.AutoSize = true;
-            this.prizeStall.Location = new System.Drawing.Point(182, 81);
+            this.prizeStall.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.prizeStall.Location = new System.Drawing.Point(120, 27);
             this.prizeStall.Name = "prizeStall";
-            this.prizeStall.Size = new System.Drawing.Size(19, 15);
+            this.prizeStall.Size = new System.Drawing.Size(102, 69);
             this.prizeStall.TabIndex = 23;
             this.prizeStall.Text = "60";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Showcard Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label22.Location = new System.Drawing.Point(279, 25);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(64, 27);
-            this.label22.TabIndex = 22;
-            this.label22.Text = "+ ile:";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Showcard Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label23.Location = new System.Drawing.Point(372, 25);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(89, 27);
-            this.label23.TabIndex = 21;
-            this.label23.Text = "Liczba:";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Showcard Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label24.Location = new System.Drawing.Point(171, 25);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(69, 27);
-            this.label24.TabIndex = 20;
-            this.label24.Text = "Cena:";
+            this.prizeStall.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // buttonShipping
             // 
+            this.buttonShipping.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.buttonShipping.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonShipping.BackgroundImage")));
             this.buttonShipping.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.buttonShipping.Enabled = false;
-            this.buttonShipping.Location = new System.Drawing.Point(29, 375);
+            this.buttonShipping.Location = new System.Drawing.Point(3, 318);
             this.buttonShipping.Name = "buttonShipping";
-            this.buttonShipping.Size = new System.Drawing.Size(117, 39);
+            this.buttonShipping.Size = new System.Drawing.Size(111, 39);
             this.buttonShipping.TabIndex = 19;
             this.buttonShipping.UseVisualStyleBackColor = true;
             this.buttonShipping.Click += new System.EventHandler(this.buttonShipping_Click);
             // 
             // buttonWholesale
             // 
+            this.buttonWholesale.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.buttonWholesale.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonWholesale.BackgroundImage")));
             this.buttonWholesale.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.buttonWholesale.Enabled = false;
-            this.buttonWholesale.Location = new System.Drawing.Point(29, 299);
+            this.buttonWholesale.Location = new System.Drawing.Point(3, 249);
             this.buttonWholesale.Name = "buttonWholesale";
-            this.buttonWholesale.Size = new System.Drawing.Size(117, 39);
+            this.buttonWholesale.Size = new System.Drawing.Size(111, 39);
             this.buttonWholesale.TabIndex = 18;
             this.buttonWholesale.UseVisualStyleBackColor = true;
             this.buttonWholesale.Click += new System.EventHandler(this.buttonWholesale_Click);
             // 
             // buttonBakery
             // 
+            this.buttonBakery.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.buttonBakery.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonBakery.BackgroundImage")));
             this.buttonBakery.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.buttonBakery.Enabled = false;
-            this.buttonBakery.Location = new System.Drawing.Point(29, 220);
+            this.buttonBakery.Location = new System.Drawing.Point(3, 180);
             this.buttonBakery.Name = "buttonBakery";
-            this.buttonBakery.Size = new System.Drawing.Size(117, 39);
+            this.buttonBakery.Size = new System.Drawing.Size(111, 39);
             this.buttonBakery.TabIndex = 17;
             this.buttonBakery.UseVisualStyleBackColor = true;
             this.buttonBakery.Click += new System.EventHandler(this.buttonBakery_Click);
             // 
             // buttonBakkie
             // 
+            this.buttonBakkie.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.buttonBakkie.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonBakkie.BackgroundImage")));
             this.buttonBakkie.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.buttonBakkie.Enabled = false;
-            this.buttonBakkie.Location = new System.Drawing.Point(29, 141);
+            this.buttonBakkie.Location = new System.Drawing.Point(3, 111);
             this.buttonBakkie.Name = "buttonBakkie";
-            this.buttonBakkie.Size = new System.Drawing.Size(117, 39);
+            this.buttonBakkie.Size = new System.Drawing.Size(111, 39);
             this.buttonBakkie.TabIndex = 16;
             this.buttonBakkie.UseVisualStyleBackColor = true;
             this.buttonBakkie.Click += new System.EventHandler(this.buttonBakkie_Click);
             // 
             // buttonStall
             // 
+            this.buttonStall.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.buttonStall.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonStall.BackgroundImage")));
             this.buttonStall.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.buttonStall.Enabled = false;
-            this.buttonStall.Location = new System.Drawing.Point(29, 69);
+            this.buttonStall.Location = new System.Drawing.Point(3, 42);
             this.buttonStall.Name = "buttonStall";
-            this.buttonStall.Size = new System.Drawing.Size(117, 39);
+            this.buttonStall.Size = new System.Drawing.Size(111, 39);
             this.buttonStall.TabIndex = 15;
             this.buttonStall.UseVisualStyleBackColor = true;
             this.buttonStall.Click += new System.EventHandler(this.buttonStall_Click);
@@ -771,11 +818,130 @@
             this.label7.Size = new System.Drawing.Size(192, 23);
             this.label7.TabIndex = 51;
             // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 4;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 117F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel1.Controls.Add(this.buttonMixer, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(this.buttonOven, 0, 5);
+            this.tableLayoutPanel1.Controls.Add(this.label2, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.label4, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.label3, 3, 0);
+            this.tableLayoutPanel1.Controls.Add(this.prizeMixer, 1, 4);
+            this.tableLayoutPanel1.Controls.Add(this.prizeOven, 1, 5);
+            this.tableLayoutPanel1.Controls.Add(this.cookieOven, 2, 5);
+            this.tableLayoutPanel1.Controls.Add(this.cookieMixer, 2, 4);
+            this.tableLayoutPanel1.Controls.Add(this.cookieFlour, 2, 3);
+            this.tableLayoutPanel1.Controls.Add(this.cookieStool, 2, 2);
+            this.tableLayoutPanel1.Controls.Add(this.cookieRoller, 2, 1);
+            this.tableLayoutPanel1.Controls.Add(this.numberRoller, 3, 1);
+            this.tableLayoutPanel1.Controls.Add(this.numberStool, 3, 2);
+            this.tableLayoutPanel1.Controls.Add(this.numberFlour, 3, 3);
+            this.tableLayoutPanel1.Controls.Add(this.numberMixer, 3, 4);
+            this.tableLayoutPanel1.Controls.Add(this.numberOven, 3, 5);
+            this.tableLayoutPanel1.Controls.Add(this.prizeFlour, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.buttonFlour, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.prizeStool, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.prizeRoller, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.buttonRoller, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.buttonStool, 0, 2);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(802, 30);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 6;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 27F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(442, 372);
+            this.tableLayoutPanel1.TabIndex = 52;
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.ColumnCount = 4;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 117F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel2.Controls.Add(this.label8, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.label9, 2, 0);
+            this.tableLayoutPanel2.Controls.Add(this.label10, 3, 0);
+            this.tableLayoutPanel2.Controls.Add(this.buttonStall, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.buttonBakkie, 0, 2);
+            this.tableLayoutPanel2.Controls.Add(this.buttonBakery, 0, 3);
+            this.tableLayoutPanel2.Controls.Add(this.buttonWholesale, 0, 4);
+            this.tableLayoutPanel2.Controls.Add(this.buttonShipping, 0, 5);
+            this.tableLayoutPanel2.Controls.Add(this.prizeShipping, 1, 5);
+            this.tableLayoutPanel2.Controls.Add(this.cookieShipping, 2, 5);
+            this.tableLayoutPanel2.Controls.Add(this.numberShipping, 3, 5);
+            this.tableLayoutPanel2.Controls.Add(this.numberWholesale, 3, 4);
+            this.tableLayoutPanel2.Controls.Add(this.numberBakery, 3, 3);
+            this.tableLayoutPanel2.Controls.Add(this.cookieBakery, 2, 3);
+            this.tableLayoutPanel2.Controls.Add(this.cookieWholesale, 2, 4);
+            this.tableLayoutPanel2.Controls.Add(this.prizeWholesale, 1, 4);
+            this.tableLayoutPanel2.Controls.Add(this.numberBakkie, 3, 2);
+            this.tableLayoutPanel2.Controls.Add(this.prizeBakkie, 1, 2);
+            this.tableLayoutPanel2.Controls.Add(this.cookieBakkie, 2, 2);
+            this.tableLayoutPanel2.Controls.Add(this.prizeBakery, 1, 3);
+            this.tableLayoutPanel2.Controls.Add(this.prizeStall, 1, 1);
+            this.tableLayoutPanel2.Controls.Add(this.numberStall, 3, 1);
+            this.tableLayoutPanel2.Controls.Add(this.cookieStall, 2, 1);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(19, 30);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 6;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 27F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(442, 372);
+            this.tableLayoutPanel2.TabIndex = 53;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Showcard Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label8.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label8.Location = new System.Drawing.Point(120, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(69, 27);
+            this.label8.TabIndex = 9;
+            this.label8.Text = "Cena:";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Showcard Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label9.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label9.Location = new System.Drawing.Point(228, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(64, 27);
+            this.label9.TabIndex = 10;
+            this.label9.Text = "+ ile:";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Showcard Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label10.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label10.Location = new System.Drawing.Point(336, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(89, 27);
+            this.label10.TabIndex = 10;
+            this.label10.Text = "Liczba:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1284, 812);
+            this.Controls.Add(this.tableLayoutPanel2);
+            this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.labelGetCard);
@@ -790,54 +956,8 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.secondPowerValue);
             this.Controls.Add(this.powerOfSecond);
-            this.Controls.Add(this.numberShipping);
-            this.Controls.Add(this.cookieShipping);
-            this.Controls.Add(this.prizeShipping);
-            this.Controls.Add(this.prizeWholesale);
-            this.Controls.Add(this.prizeBakery);
-            this.Controls.Add(this.prizeBakkie);
-            this.Controls.Add(this.numberWholesale);
-            this.Controls.Add(this.numberBakery);
-            this.Controls.Add(this.numberBakkie);
-            this.Controls.Add(this.numberStall);
-            this.Controls.Add(this.cookieWholesale);
-            this.Controls.Add(this.cookieBakery);
-            this.Controls.Add(this.cookieBakkie);
-            this.Controls.Add(this.cookieStall);
-            this.Controls.Add(this.prizeStall);
-            this.Controls.Add(this.label22);
-            this.Controls.Add(this.label23);
-            this.Controls.Add(this.label24);
-            this.Controls.Add(this.buttonShipping);
-            this.Controls.Add(this.buttonWholesale);
-            this.Controls.Add(this.buttonBakery);
-            this.Controls.Add(this.buttonBakkie);
-            this.Controls.Add(this.buttonStall);
             this.Controls.Add(this.clikPowerValue);
             this.Controls.Add(this.powerOfClick);
-            this.Controls.Add(this.numberOven);
-            this.Controls.Add(this.cookieOven);
-            this.Controls.Add(this.prizeOven);
-            this.Controls.Add(this.prizeMixer);
-            this.Controls.Add(this.prizeFlour);
-            this.Controls.Add(this.prizeStool);
-            this.Controls.Add(this.numberMixer);
-            this.Controls.Add(this.numberFlour);
-            this.Controls.Add(this.numberStool);
-            this.Controls.Add(this.numberRoller);
-            this.Controls.Add(this.cookieMixer);
-            this.Controls.Add(this.cookieFlour);
-            this.Controls.Add(this.cookieStool);
-            this.Controls.Add(this.cookieRoller);
-            this.Controls.Add(this.prizeRoller);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.buttonOven);
-            this.Controls.Add(this.buttonMixer);
-            this.Controls.Add(this.buttonFlour);
-            this.Controls.Add(this.buttonStool);
-            this.Controls.Add(this.buttonRoller);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonCookie);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -845,6 +965,10 @@
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Cookie Clicker";
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -896,9 +1020,6 @@
         private Label cookieBakkie;
         private Label cookieStall;
         private Label prizeStall;
-        private Label label22;
-        private Label label23;
-        private Label label24;
         private Button buttonShipping;
         private Button buttonWholesale;
         private Button buttonBakery;
@@ -922,5 +1043,10 @@
         private System.Windows.Forms.Timer timer5;
         private System.Windows.Forms.Timer timer6;
         private Label label7;
+        private TableLayoutPanel tableLayoutPanel1;
+        private TableLayoutPanel tableLayoutPanel2;
+        private Label label8;
+        private Label label9;
+        private Label label10;
     }
 }
